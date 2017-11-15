@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+.reason{
+    height: 65%;
+    background-color: rgb(255, 255, 255);
+}
+.reason-card{
+    /*height: 150px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.h2-style{
+    font-size: 20px;
+    color: darkgray;
+}
+
+#reason-text{
+    display: flex;
+    height: 35%;
+    text-align: center;
+    background-color: #c34c3d;
+    justify-content: center;
+    align-items: center;
+    color:#FFF;
+
+}
+.reason-card > *{
+    margin-top: 10px;
+}
+
+.reason-card{
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 769px){
+    .reason-list{
+        display: flex;
+        flex-direction: row;
+
+    }
+}
