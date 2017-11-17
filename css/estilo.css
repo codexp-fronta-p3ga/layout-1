@@ -11,25 +11,26 @@ body {
     font-size: 14px;
 }
 
-.hero-header::before {
-    z-index: -1;
-    width: 100%;
-    height: 400px;
-    filter: blur(2px);
-    background-image: url(../img/header.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-    content: "";
-}
-
-.hero-header {
-    width: 100%;
-    height: 400px;
-    background-color: rgba(184, 60, 44, 0.75);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .hero-header::before {
+        z-index: -1;
+        width: 100%;
+        height: 400px;
+        filter: blur(2px);
+        background-image: url(../img/header.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        content: "";
+    }
+    .hero-header {
+        width: 100%;
+        height: 400px;
+        background-color: rgba(184, 60, 44, 0.75);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .hero-header>* {
@@ -54,6 +55,42 @@ body {
     display: flex;
     justify-content: space-between;
     list-style: none;
+}
+
+.hero-title {
+    width: 65%;
+    margin: 20px auto;
+    text-align: center;
+    font-weight: 400;
+}
+
+.hero-info {
+    display: none;
+}
+
+.hero-button {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.store-button {
+    width: 135px;
+    height: 35px;
+    margin-right: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.store-logo {
+    width: 20px;
+    height: 20px;
 }
 
 .get-it-touch {
@@ -116,6 +153,30 @@ body {
 }
 
 @media screen and (min-width:428px) and (max-width: 768px) {
+    .hero-info {
+        width: 50%;
+        margin: 20px auto;
+        text-align: left;
+        display: flex;
+    }
+    .hero-button {
+        width: 80%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .store-button {
+        width: 100px;
+        height: 35px;
+        margin: 0 15px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 3px;
+    }
     .titulo-get-it-touch {
         width: 20%;
         margin: 0 auto;
@@ -137,7 +198,63 @@ body {
     }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1440px) {
+@media screen and (min-width: 769px) {
+    .hero-header::before {
+        z-index: -1;
+        width: 100%;
+        height: 400px;
+        filter: blur(2px);
+        background-image: url(../img/paisagem.png);
+        background-position: initial;
+        background-repeat: no-repeat;
+        position: absolute;
+        content: "";
+    }
+    .hero-header {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-header>* {
+        margin-bottom: 5px;
+    }
+    .hero-desk {
+        width: 60%;
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-title {
+        width: 60%;
+        margin: 20px auto 0 auto;
+        text-align: center;
+        font-weight: bold;
+        display: flex;
+    }
+    .hero-info {
+        width: 60%;
+        margin: 20px auto;
+        text-align: left;
+        font-weight: 600;
+        display: flex;
+    }
+    .hero-button {
+        width: 60%;
+        margin: 15px 16%;
+        display: flex;
+        flex-direction: row;
+    }
+    .store-button {
+        width: 135px;
+        height: 35px;
+        margin: 0 15px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 3px;
+    }
     .titulo-get-it-touch {
         width: 15%;
         margin: 0 auto;
